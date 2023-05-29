@@ -1,0 +1,68 @@
+.navbar{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 2rem;
+    
+}
+
+.logoContainer img{
+    heigth: 4rem;
+    width: 8rem;
+}
+
+.logoContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.logoTexts{
+    display: flex;
+    flex-direction: column;
+}
+
+logoTexts p{
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    gap:10rem;
+}
+
+.navLinks a.activeLink{
+    color: rgb(135, 118, 38);
+    font-weight: bold;
+}
+
+.navLinks ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+}
+
+.navLinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navButtons{
+    display: flex;
+    gap: 2rem;
+   transform: translateX(25rem)
+}
+
+.navButtons button{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    background: none;
+}
+
+ .navButtons .greenBtn{
+    background-color: rgb(135, 118, 38);
+    color: white;
+}
