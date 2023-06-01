@@ -1,0 +1,101 @@
+.hero{
+    padding-top: 3rem;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    min-width: 80%;
+    min-height: 70vh;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(240,242,241);
+     gap:4rem;
+    padding: 4rem;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+     background: rgba(240,242,241);
+}
+
+.card-texts{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.card-heading-text{
+ font-size: 2.5rem;
+}
+
+.card-normal-text{
+    font-weight: 500;
+}
+
+.top-ctas{
+    display: flex;
+    gap: 2rem;
+}
+.top-cta1{
+    background: rgba(228, 231, 244);
+    color: rgba(127, 108, 245);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+.top-cta2{
+    background: none;
+    color: rgb(109, 107, 110);
+    border: 1px solid rgb(109, 107, 110);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+.card-bottom-cta{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: rgb(135, 118, 38);
+    width: 8rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem;
+    height: 100%;
+    width: 40%;
+    background: white;
+    border-radius: 20px;
+}
+
+ .card-right-name{
+    font-weight: 800;
+}
+
+.btc-per-time{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.card-right img{
+    border-radius: 10px;
+}

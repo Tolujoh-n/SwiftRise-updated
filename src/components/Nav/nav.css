@@ -2,18 +2,24 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    padding: 2rem 2rem;
-    
+    padding: 2rem 4rem;
+    background: rgba(255,255, 255, .5);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
 }
-
+.left{
+    display: flex;
+    gap: 2rem;
+}
 .logoContainer img{
-    heigth: 4rem;
     width: 8rem;
 }
 
 .logoContainer{
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .logoTexts{
@@ -21,9 +27,13 @@
     flex-direction: column;
 }
 
-logoTexts p{
-    margin: 0;
-    padding: 0;
+.navLetterSpacing{
+    letter-spacing: 0.3rem;
+}
+
+.logoTexts p{
+    font-weight: bold;
+    color: rgb(135, 118, 38);
 }
 
 .navLinks{
@@ -33,8 +43,9 @@ logoTexts p{
 }
 
 .navLinks a.activeLink{
-    color: rgb(135, 118, 38);
+    color: black;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .navLinks ul {
@@ -52,7 +63,7 @@ logoTexts p{
 .navButtons{
     display: flex;
     gap: 2rem;
-   transform: translateX(25rem)
+    justify-self: flex-end;
 }
 
 .navButtons button{
