@@ -1,6 +1,8 @@
 import "./hero.css";
 import miner from "../../assets/s9miner.jpeg";
 import minerMan from "../../assets/miner-image.jpeg";
+import { AiOutlinePlus } from "react-icons/ai";
+import video from "../../assets/verifarm.mp4";
 const Hero = () => {
   return (
     <div className="hero">
@@ -124,6 +126,85 @@ const Hero = () => {
         <div className="right-image">
           <img src={minerMan} alt="miner man" />
         </div>
+      </div>
+
+      <div className="earn">
+        <div className="earn-left">
+          <div className="earn-texts">
+            <div className="earn-title">
+              <p>Earn Money with Veryfarm?</p>
+            </div>
+            <p>
+              To start mining bitcoins, just select a miner equipment from your
+              personal Verifarm account, each miner has a different cost and
+              rental period. Each equipment generates a unique account of
+              bitcoin daily. These coins are deposited to your personal account.
+              You just have to collect your coins everyday without any cost
+            </p>
+          </div>
+        </div>
+        <div className="earn-image">
+          <video controls>
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div className="staggers">
+        <div className="stagger one">
+          <p className="title">Extensive range of services</p>
+          <p>
+            The Vericoin pool is an important part of the global vericoin
+            ecosystem. Uses thesame accounting system as our cloud minning
+            service to ensure security. The Vericoin and Verifarm pool aims to
+            erase the line between mining and trading by providing users with a
+            wide range of mining solutions.
+          </p>
+        </div>
+
+        <div className="stagger two">
+          <p className="title">Reliable mining solutions</p>
+          <p>
+            Verifarm provides a comprehensive mining platform with extensive
+            experience working with mining pools and competitive mining
+            technologies. We Strive to provide high quality and innovative cloud
+            mining service for users who need comprehensive mining services.
+          </p>
+        </div>
+
+        <div className="stagger three">
+          <p className="title">Guarantee of services</p>
+          <p>
+            Verifarm strives to provide qualified projects with opportunities
+            and improve industry standard practices to achieve consensus in the
+            community. We strive to introduce more people around the world to
+            blockchain technology and outstanding projects as well as contribute
+            towards the sustainable and stable development of our ecosystem.
+          </p>
+        </div>
+      </div>
+      <div className="FAQ">
+        <p className="title">FAQ</p>
+        <div className="faq-lists">
+          {[
+            "What is Cloud Minning?",
+            "How does it work?",
+            "when can I withdraw funds from my account?",
+            "Can I rent several different miners?",
+            "What payment method do you accept and what coins can be mined?",
+            "Do you have an affiliate program and how does it work?",
+          ].map((list, id) => (
+            <div key={id} className="faq-list">
+              <p>{list}</p>
+              <AiOutlinePlus />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="end">
+        <p>Start your bitcoin mining journey today!</p>
+        <button>
+          <p>Register Now</p>
+        </button>
       </div>
     </div>
   );

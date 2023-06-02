@@ -149,4 +149,159 @@
 
 .what-is{
     display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding:  2rem 9rem;
+}
+
+.what-is-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50%;
+}
+.what-is-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.what-is-title p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.right-image img{
+    height: 25rem;
+    border-radius: 20px;
+
+}
+
+.earn{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding:  2rem 9rem;
+    flex-direction: row-reverse;
+}
+
+.earn-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50%;
+}
+.earn-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.earn-title p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.earn-image video{
+    height: 25rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    background: rgb(135, 118, 38);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.staggers{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.stagger{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stagger .title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.stagger.one{
+    max-width: 70%;
+    max-width: 40rem;
+    transform: translateX(-16rem);
+}
+
+.stagger.two{
+    max-width: 70%;
+    transform: translateX(20rem);
+    max-width: 36rem;
+}
+.stagger.three{
+    max-width: 70%;
+    max-width: 40rem;
+    transform: translateX(-4rem);
+}
+.FAQ{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.FAQ .title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.faq-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-list{
+    display: flex;
+    justify-content: space-between;
+    background: #ccc;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    width: 65vw;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem; 
+    gap: 1rem;
+}
+
+.end p{
+    max-width: 15rem;
+    text-align: center;
+}
+
+.end button{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: rgb(135, 118, 38);
+    width: 10rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
 }
