@@ -1,4 +1,4 @@
-import logo from "../../assets/VERICOIN.svg";
+import logo from "../../assets/logo.png";
 import "./nav.css";
 import { Link } from "react-router-dom";
 const Nav = () => {
@@ -6,7 +6,7 @@ const Nav = () => {
     <div className="navbar">
       <div className="left">
         <div className="logoContainer">
-          {/* <img src={logo} alt="logo" /> */}
+          <img src={logo} alt="logo" />
           <div className="logoTexts">
             <p>SWIFTRISE</p>
             <p className="navLetterSpacing">MINING</p>

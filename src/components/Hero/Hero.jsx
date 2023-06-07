@@ -2,7 +2,7 @@ import "./hero.css";
 import miner from "../../assets/s9miner.jpeg";
 import minerMan from "../../assets/miner-image.jpeg";
 import { AiOutlinePlus } from "react-icons/ai";
-import video from "../../assets/verifarm.mp4";
+import swift from "../../assets/swift.mp4";
 const Hero = () => {
   return (
     <div className="hero">
@@ -145,7 +145,7 @@ const Hero = () => {
         </div>
         <div className="earn-image">
           <video controls>
-            <source src={video} type="video/mp4" />
+            <source src={swift} type="video/mp4" />
           </video>
         </div>
       </div>
