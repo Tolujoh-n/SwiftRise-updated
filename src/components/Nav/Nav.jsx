@@ -6,9 +6,9 @@ const Nav = () => {
     <div className="navbar">
       <div className="left">
         <div className="logoContainer">
-          <img src={logo} alt="logo" />
+          {/* <img src={logo} alt="logo" /> */}
           <div className="logoTexts">
-            <p>VERIFARM</p>
+            <p>SWIFTRISE</p>
             <p className="navLetterSpacing">MINING</p>
           </div>
         </div>
@@ -20,7 +20,7 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <a href="#">Vericoin Pool</a>
+              <a href="#">Swiftrise Pool</a>
             </li>
             <li>
               <a href="#">About Us</a>

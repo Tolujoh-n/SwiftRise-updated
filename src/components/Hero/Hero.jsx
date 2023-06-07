@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="middle-card-texts">
             <p className="middle-card-text-title">Multiple tokens</p>
             <p className="middle-card-text-desc">
-              Currently, the Vericoin pool supports Bitcoin (BTC), Etherium
+              Currently, the Swiftrise pool supports Bitcoin (BTC), Etherium
               (ETH) and Bitcoin Cash (BACK)
             </p>
           </div>
@@ -110,13 +110,13 @@ const Hero = () => {
         <div className="what-is-left">
           <div className="what-is-texts">
             <div className="what-is-title">
-              <p>What is Veryfarm?</p>
+              <p>What is Swiftrise?</p>
             </div>
             <p>
-              Verifarm is a simple and affordable cloud mining service. The main
+              Swiftrise is a simple and affordable cloud mining service. The main
               purpose of which is to introduce a wider audience to the world of
-              bitcoin and other cryptocurrencies. Verifarm has a huge number of
-              ASIIC miners who mine bitcoin daily on the vericoin pool.
+              bitcoin and other cryptocurrencies. Swiftrise has a huge number of
+              ASIIC miners who mine bitcoin daily on the Swiftrise pool.
             </p>
           </div>
           <div className="what-is-button">
@@ -132,11 +132,11 @@ const Hero = () => {
         <div className="earn-left">
           <div className="earn-texts">
             <div className="earn-title">
-              <p>Earn Money with Veryfarm?</p>
+              <p>Earn Money with Swiftrise?</p>
             </div>
             <p>
               To start mining bitcoins, just select a miner equipment from your
-              personal Verifarm account, each miner has a different cost and
+              personal Swiftrise account, each miner has a different cost and
               rental period. Each equipment generates a unique account of
               bitcoin daily. These coins are deposited to your personal account.
               You just have to collect your coins everyday without any cost
@@ -153,9 +153,9 @@ const Hero = () => {
         <div className="stagger one">
           <p className="title">Extensive range of services</p>
           <p>
-            The Vericoin pool is an important part of the global vericoin
+            The Swiftrise pool is an important part of the global Swiftrise
             ecosystem. Uses thesame accounting system as our cloud minning
-            service to ensure security. The Vericoin and Verifarm pool aims to
+            service to ensure security. The Swiftrise and Swiftrise pool aims to
             erase the line between mining and trading by providing users with a
             wide range of mining solutions.
           </p>
@@ -164,7 +164,7 @@ const Hero = () => {
         <div className="stagger two">
           <p className="title">Reliable mining solutions</p>
           <p>
-            Verifarm provides a comprehensive mining platform with extensive
+            Swiftrise provides a comprehensive mining platform with extensive
             experience working with mining pools and competitive mining
             technologies. We Strive to provide high quality and innovative cloud
             mining service for users who need comprehensive mining services.
@@ -174,7 +174,7 @@ const Hero = () => {
         <div className="stagger three">
           <p className="title">Guarantee of services</p>
           <p>
-            Verifarm strives to provide qualified projects with opportunities
+            Swiftrise strives to provide qualified projects with opportunities
             and improve industry standard practices to achieve consensus in the
             community. We strive to introduce more people around the world to
             blockchain technology and outstanding projects as well as contribute
