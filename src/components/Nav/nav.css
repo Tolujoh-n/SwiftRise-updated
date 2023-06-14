@@ -1,0 +1,88 @@
+.navbar {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 4rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1;
+}
+.left {
+  display: flex;
+  gap: 2rem;
+}
+.logoContainer img {
+  width: 10rem;
+  position: absolute;
+  left: 1.5rem;
+  top: -16px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoTexts {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLetterSpacing {
+  letter-spacing: 0.4rem;
+}
+
+.logoTexts p {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-left: 5.5rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+ 
+}
+
+.navLinks a.activeLink {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navLinks ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+}
+
+.navLinks ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navButtons {
+  display: flex;
+  gap: 2rem;
+  justify-self: flex-end;
+}
+
+.navButtons button {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navButtons .greenBtn {
+  background-color: var(--primary-color);
+  color: white;
+}

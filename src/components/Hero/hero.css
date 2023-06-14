@@ -1,0 +1,307 @@
+.hero{
+    padding-top: 8rem;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.big-card{
+    display: flex;
+    min-width: 80%;
+    min-height: 70vh;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(240,242,241);
+     gap:4rem;
+    padding: 4rem;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+     background: rgba(240,242,241);
+}
+
+.card-texts{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.card-heading-text{
+ font-size: 2.5rem;
+}
+
+.card-normal-text{
+    font-weight: 500;
+}
+
+.top-ctas{
+    display: flex;
+    gap: 2rem;
+}
+.top-cta1{
+    background: rgba(228, 231, 244);
+    color: rgba(127, 108, 245);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+.top-cta2{
+    background: none;
+    color: rgb(109, 107, 110);
+    border: 1px solid rgb(109, 107, 110);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+.card-bottom-cta{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: var(--primary-color);
+    width: 8rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem;
+    height: 100%;
+    width: 40%;
+    background: white;
+    border-radius: 20px;
+}
+
+ .card-right-name{
+    font-weight: 800;
+}
+
+.btc-per-time{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.card-right img{
+    border-radius: 10px;
+}
+
+.middle-cards{
+    
+     display: flex;
+     gap: 2rem;
+}
+
+.middle-card{
+    display: flex;
+    flex-direction: column;
+    width: 22.5rem;
+    background: rgba(240,242,241);
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.middle-card-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.middle-card-text-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.middle-objects{
+    display: flex;
+   gap: 23.5rem;
+}
+
+.middle-object-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-object-text-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.what-is{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding:  2rem 9rem;
+}
+
+.what-is-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50%;
+}
+.what-is-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.what-is-title p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.right-image img{
+    height: 25rem;
+    border-radius: 20px;
+
+}
+
+.earn{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding:  2rem 9rem;
+    flex-direction: row-reverse;
+}
+
+.earn-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50%;
+}
+.earn-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.earn-title p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.earn-image video{
+    height: 25rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.staggers{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.stagger{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stagger .title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.stagger.one{
+    max-width: 70%;
+    max-width: 40rem;
+    transform: translateX(-16rem);
+}
+
+.stagger.two{
+    max-width: 70%;
+    transform: translateX(20rem);
+    max-width: 36rem;
+}
+.stagger.three{
+    max-width: 70%;
+    max-width: 40rem;
+    transform: translateX(-4rem);
+}
+.FAQ{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.FAQ .title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.faq-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-list{
+    display: flex;
+    justify-content: space-between;
+    background: #ccc;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    width: 65vw;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem; 
+    gap: 1rem;
+}
+
+.end p{
+    max-width: 15rem;
+    text-align: center;
+}
+
+.end button{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: var(--primary-color);
+    width: 10rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
+}
