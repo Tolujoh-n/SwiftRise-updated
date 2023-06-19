@@ -1,0 +1,37 @@
+# Fetch your Data with the APIs Django Backend
+## Here is the ApIs so you can use with your react App. Actually we supposed to use PostMan but for know let's use this:
+- /api/myview/ -Note that this API is bringing a message "Free 1 TH/$ on first sign up!" message from the backend
+- 
+-
+
+
+# Hint to consume your APIs (Just to refresh your brain using the APIs in react App)
+- In your pages
+
+
+Here is a basic one 
+import React, { useState, useEffect } from 'react';
+
+function MessageDisplay() {
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    fetch('/api/myview/')
+      .then(response => response.json())
+      .then(data => {
+        setMessage(data.message);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []);
+
+  return (
+    <div>
+      <h1>Message from Django Backend: Note that this message is bringing "Free 1 TH/$ on first sign up!" message from the backend</h1>
+      <p>{message}</p>
+    </div>
+  );
+}
+
+export default MessageDisplay;
