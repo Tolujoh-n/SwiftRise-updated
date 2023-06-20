@@ -20,7 +20,7 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <a href="#">Swiftrise Pool</a>
+              <a href="#">Swiftrise Bounty</a>
             </li>
             <li>
               <a href="#">About Us</a>
