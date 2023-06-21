@@ -4,8 +4,10 @@ import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup'
-import About us from './components/About us/About'
 import Review from './components/Review/Review';
+import About from './components/About/About'
+
+
 
 function App() {
 
@@ -15,8 +17,9 @@ function App() {
       <Hero/>
       <Login />
       <Signup />
-      <About us />
       <Review />
+      <About />
+      
     </>
   )
 }
