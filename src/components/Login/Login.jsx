@@ -1,26 +1,27 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import "./Login.css"
 
 const Login = () => {
   return (
-    <>
-    <div className="row col-12 d-flex justify-content-center text-white">
-          <h3>Login</h3>
-      </div>
-      <div className="form">
-                      <div className="email">
-                          <label className="form__label" />Email </label>
-                      <input type="email" id="email" className="form__input" placeholder="Email" />
-                  </div>
-                  <div className="password">
-                      <label className="form__label" />Password </label>
-                  <input className="form__input" type="password" id="password" placeholder="Password" />
-          <div class="footer">
-              <button type="submit" class="btn">Login</button>
-          </div
+    <div className='form'>
+        <div className='form-body'>
+            <div className='username'>
+                <label className='form-label' htmlFor='username'>Username</label>
+                <input type='text' id='username' className='form-unput' placeholder='Username' />
+            </div>
+            <div className='username'>
+                <label className='form-label' htmlFor='username'>Username</label>
+                <input type='text' id='username' className='form-unput' placeholder='Username' />
+            </div>
+            <div className='Footer'>
+                <button type='submit' className='btn'>Login</button>
+            </div>
         </div>
-    )       
-}
+    </div>
 
+
+  )
+}
 
 export default Login;
