@@ -3,7 +3,14 @@ import './signup.css'
 
 const Signup = () => {
   return (
-    <div>
+    <div className='form'>
+      <div className='form-body'>
+        <div className='username'>
+           
+        
+        </div>
+
+      </div>
       
     </div>
   )
