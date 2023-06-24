@@ -1,8 +1,8 @@
 import "./hero.css";
-import miner from "../../assets/s9miner.jpeg";
-import minerMan from "../../assets/miner-image.jpeg";
+import miner from '../../../assets/s9miner.jpeg'
+import minerMan from "../../../assets/miner-image.jpeg";
 import { AiOutlinePlus } from "react-icons/ai";
-import swift from "../../assets/swift.mp4";
+import swift from "../../../assets/swift.mp4";
 const Hero = () => {
   return (
     <div className="hero">
