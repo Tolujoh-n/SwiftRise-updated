@@ -1,6 +1,6 @@
 import logo from "../../assets/logo.png";
 import "./nav.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <div className="navbar">
@@ -23,7 +23,7 @@ const Nav = () => {
               <a href="#">Swiftrise Bounty</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <NavLink to='/about'>About Us</NavLink>
             </li>
             <li>
               <a href="#">Reviews</a>
