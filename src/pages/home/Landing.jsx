@@ -1,9 +1,8 @@
 
-import Nav from "../../components/Nav/Nav"
+import { Nav, Footer } from "../../components"
 import Hero from "./Hero/Hero"
 import Login from "../Login/Login"
 import Signup from "../Signup/Signup"
-import Review from "./Review/Review"
 
 
 const Landing = () => {
@@ -13,7 +12,7 @@ const Landing = () => {
       <Hero/>
       <Login />
       <Signup />
-      <Review />
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-import { Landing, About } from '../pages'
+import { Landing, About, Review } from '../pages'
 
 export const Routes = () => {
   return useRoutes([
@@ -10,6 +10,10 @@ export const Routes = () => {
     {
       path: '/about',
       element: <About />
+    },
+    {
+      path: 'reviews',
+      element: <Review />
     }
   ]);
 };
