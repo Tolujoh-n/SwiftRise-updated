@@ -13,6 +13,17 @@ font-family: "Work Sans", sans-serif;
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
 :root {
     --primary-color: rgb(84, 161, 205);
 }
