@@ -51,8 +51,13 @@ const Nav = () => {
           </div>
         </div>
         <div className="navButtons">
-          <button>Log in</button>
-          <button className="greenBtn">Sign up</button>
+          <NavLink to='/log-in'>
+            <button>Log in</button>
+          </NavLink>
+
+          <NavLink to='/sign-up'>
+            <button className="greenBtn">Sign up</button>
+          </NavLink>
         </div>
       </div>
     </div>

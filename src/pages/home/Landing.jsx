@@ -1,20 +1,11 @@
-
-import { Nav, Footer } from "../../components"
-import Hero from "./Hero/Hero"
-import Login from "../Login/Login"
-import Signup from "../Signup/Signup"
-
+import Hero from './Hero/Hero';
 
 const Landing = () => {
   return (
     <>
-      <Nav />
-      <Hero/>
-      <Login />
-      <Signup />
-      <Footer />
+      <Hero />
     </>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;
