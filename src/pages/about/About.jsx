@@ -7,15 +7,13 @@ import {
   Text,
   Button,
 } from '@chakra-ui/react';
-import { Footer, Nav } from '../../components';
 import { swiftBountyUse } from '../../config/data';
-// import coinImage from '../../assets/about-info.png'
 import lock from '../../assets/goldenlock.jpeg';
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
   return (
     <>
-      <Nav />
       <Box
         maxWidth={{ base: '100%', md: '90%', xl: '1200px' }}
         m="0 auto"
@@ -92,20 +90,22 @@ const About = () => {
               today and start investing!
             </Text>
 
-            <Button
-              bgColor="primary.100"
-              borderRadius="10px"
-              p="1rem 2rem"
-              _hover={{
-                opacity: '0.8',
-              }}
-            >
-              Sign up
-            </Button>
+            <NavLink to="/sign-up">
+              <Button
+                bgColor="primary.100"
+                borderRadius="10px"
+                color='#fff'
+                p="1rem 2rem"
+                _hover={{
+                  opacity: '0.8',
+                }}
+              >
+                Sign up
+              </Button>
+            </NavLink>
           </Box>
         </Box>
       </Box>
-      <Footer />
     </>
   );
 };
