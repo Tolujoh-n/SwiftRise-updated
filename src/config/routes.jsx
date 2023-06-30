@@ -1,11 +1,15 @@
 import { useRoutes } from 'react-router-dom';
-import { Landing, About, Review, Login, Signup } from '../pages'
+import { Landing, Bounty, About, Review, Login, Signup } from '../pages'
 
 export const Routes = () => {
   return useRoutes([
     {
       path: '/',
       element: <Landing />,
+    },
+    {
+      path: '/',
+      element: <Bounty />,
     },
     {
       path: 'about',
