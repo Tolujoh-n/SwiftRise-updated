@@ -13,6 +13,20 @@ font-family: "Work Sans", sans-serif;
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
 :root {
     --primary-color: rgb(84, 161, 205);
 }
