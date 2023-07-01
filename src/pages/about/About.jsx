@@ -52,7 +52,15 @@ const About = () => {
             include:
           </Text>
 
-          <Grid templateColumns="repeat(3, 1fr)" mt="1.5rem" gap="30px">
+          <Grid
+            templateColumns={{
+              base: 'repeat(1, 1fr)',
+              md: 'repeat(2, 1fr)',
+              lg: 'repeat(3, 1fr)',
+            }}
+            mt="1.5rem"
+            gap="30px"
+          >
             {swiftBountyUse.map((item) => (
               <GridItem key={item.id} textAlign="center">
                 <Box textAlign="center">{item.icon}</Box>
@@ -72,15 +80,16 @@ const About = () => {
         <Box
           display="flex"
           alignItems="center"
+          flexDir={{ base: 'column', md: 'row' }}
           my="3rem"
           bgColor="#fff"
           borderRadius="10px"
-          p="1rem 2rem"
+          p={{ base: '1rem 0.5rem', md: '1rem 2rem' }}
         >
-          <Box width="40%">
-            <Img src={lock} alt="golden-lock" />
+          <Box width={{ base: '100%', md: "40%"}}>
+            <Img src={lock} mx={{ base: 'auto', md: '0'}} alt="golden-lock" />
           </Box>
-          <Box width="60%">
+          <Box width={{ base: '100%', md: "60%" }}>
             <Heading as="h4" my="1rem">
               Looking for a way to earn more?
             </Heading>
@@ -94,7 +103,7 @@ const About = () => {
               <Button
                 bgColor="primary.100"
                 borderRadius="10px"
-                color='#fff'
+                color="#fff"
                 p="1rem 2rem"
                 _hover={{
                   opacity: '0.8',
