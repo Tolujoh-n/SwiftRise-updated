@@ -27,6 +27,15 @@ body {
     text-align: center;
 }
 
+.thumbsUp path:hover {
+    fill: #29E56E;
+}
+
+.thumbsDown path:hover {
+    fill: #F73131;
+
+}
+
 :root {
     --primary-color: rgb(84, 161, 205);
 }

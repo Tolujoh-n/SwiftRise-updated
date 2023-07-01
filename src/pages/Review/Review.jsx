@@ -14,24 +14,34 @@ import {
 import { useState } from 'react';
 import { FaPencil } from 'react-icons/fa6';
 import { Rates } from '../../components';
+import ReviewsList from './ReviewsList';
+import { useDispatch } from 'react-redux';
+import { nanoid } from '@reduxjs/toolkit';
+import { reviewAdded } from '../../state/reviewsSlice';
 
 const Review = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    rating: '',
-    comment: '',
-  });
+
+  const [name, setName] = useState('');
+  const [rating, setRating] = useState('');
+  const [comment, setComment] = useState('')
+
+  const dispatch = useDispatch();
 
   const handleReview = (e) => {
     e.preventDefault();
-    setFormData(formData);
-    console.log(formData);
-    setFormData({
-      name: '',
-      rating: '',
-      comment: ''
-    })
+    if (name && rating && comment) {
+      dispatch(reviewAdded({
+        id: nanoid(),
+        name,
+        rating,
+        comment
+      }));
+    }
+    setName('');
+    setRating('');
+    setComment('');
   };
+
   return (
     <Box
       maxWidth={{ base: '100%', md: '90%', xl: '1200px' }}
@@ -137,9 +147,8 @@ const Review = () => {
                 <Input
                   type="text"
                   name="name"
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="Name"
                 />
               </FormControl>
@@ -149,41 +158,31 @@ const Review = () => {
                   <Stack direction="row">
                     <Radio
                       value="1"
-                      onChange={(e) =>
-                        setFormData({ ...formData, rating: e.target.value })
-                      }
+                      onChange={(e) => setRating(e.target.value)}
                     >
                       1
                     </Radio>
                     <Radio
                       value="2"
-                      onChange={(e) =>
-                        setFormData({ ...formData, rating: e.target.value })
-                      }
+                      onChange={(e) => setRating(e.target.value)}
                     >
                       2
                     </Radio>
                     <Radio
                       value="3"
-                      onChange={(e) =>
-                        setFormData({ ...formData, rating: e.target.value })
-                      }
+                      onChange={(e) => setRating(e.target.value)}
                     >
                       3
                     </Radio>
                     <Radio
                       value="4"
-                      onChange={(e) =>
-                        setFormData({ ...formData, rating: e.target.value })
-                      }
+                      onChange={(e) => setRating(e.target.value)}
                     >
                       4
                     </Radio>
                     <Radio
                       value="5"
-                      onChange={(e) =>
-                        setFormData({ ...formData, rating: e.target.value })
-                      }
+                      onChange={(e) => setRating(e.target.value)}
                     >
                       5
                     </Radio>
@@ -194,7 +193,7 @@ const Review = () => {
               <FormControl my="1rem">
                 <Textarea
                   onChange={(e) =>
-                    setFormData({ ...formData, comment: e.target.value })
+                    setComment(e.target.value)
                   }
                   placeholder="Comment"
                 />
@@ -206,6 +205,13 @@ const Review = () => {
             </form>
           </Box>
         </Box>
+      </Box>
+
+      <Box>
+        <Heading as="h3" my="1rem">
+          Our Reviews
+        </Heading>
+        <ReviewsList />
       </Box>
     </Box>
   );
