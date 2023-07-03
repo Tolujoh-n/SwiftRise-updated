@@ -1,0 +1,51 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const RegistrationForm = () => {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [repeatPassword, setRepeatPassword] = useState('');
+  const [walletAddress, setWalletAddress] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleRegistration = async (e) => {
+    e.preventDefault();
+
+    if (password !== repeatPassword) {
+      setErrorMessage('Passwords do not match');
+      return;
+    }
+
+    try {
+      const response = await axios.post('/api/register/', {
+        username,
+        email,
+        password,
+        repeat_password: repeatPassword,
+        wallet_address: walletAddress,
+      });
+
+      // Handle successful registration
+      console.log(response.data);
+    } catch (error) {
+      // Handle registration error
+      console.log(error.response.data);
+      setErrorMessage('Registration failed');
+    }
+  };
+
+  return (
+    <form onSubmit={handleRegistration}>
+      <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" required />
+      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
+      <input type="password" value={repeatPassword} onChange={(e) => setRepeatPassword(e.target.value)} placeholder="Repeat Password" required />
+      <input type="text" value={walletAddress} onChange={(e) => setWalletAddress(e.target.value)} placeholder="Wallet Address" required />
+      {errorMessage && <p>{errorMessage}</p>}
+      <button type="submit">Register</button>
+    </form>
+  );
+};
+
+export default RegistrationForm;

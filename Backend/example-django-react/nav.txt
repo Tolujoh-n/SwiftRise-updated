@@ -1,0 +1,44 @@
+import React from 'react';
+import axios from 'axios';
+
+const Navbar = () => {
+  const handleLogout = async () => {
+    try {
+      const response = await axios.get('/api/logout/');
+
+      // Handle successful logout
+      console.log(response.data);
+    } catch (error) {
+      // Handle logout error
+      console.log(error.response.data);
+    }
+  };
+
+  // You can use the authentication state to conditionally render UI components
+  const isAuthenticated = true; // Set the authentication state based on your app's logic
+
+  const handleLogin = () => {
+    // Handle login navigation or display login modal
+    console.log('Login clicked');
+  };
+
+  const handleRegister = () => {
+    // Handle registration navigation or display registration modal
+    console.log('Register clicked');
+  };
+
+  return (
+    <nav>
+      {isAuthenticated ? (
+        <button onClick={handleLogout}>Logout</button>
+      ) : (
+        <div>
+          <button onClick={handleLogin}>Login</button>
+          <button onClick={handleRegister}>Register</button>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
